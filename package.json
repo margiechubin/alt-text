@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "1.0.0",
-  "description": "Deck created with mdx-deck",
+  "description": "alt-text",
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
@@ -13,10 +13,7 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.6.7"
+    "mdx-deck": "^2.0.5"
   },
-  "name": "alt-text",
-  "dependencies": {
-    "react-syntax-highlighter": "^10.1.3"
-  }
+  "name": "alt-text"
 }

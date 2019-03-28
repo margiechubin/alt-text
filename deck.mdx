@@ -1,7 +1,6 @@
 import { Head } from 'mdx-deck'
 
 export { default as theme } from './theme'
-import { Link, List } from './styledComponents'
 
 <Head>
   <title>Alt Text</title>
@@ -13,19 +12,19 @@ import { Link, List } from './styledComponents'
 
 ## What is Alt Text?
 
-<List>
+<ul>
 	<li>Text alternatives for non-text content (images, icons, emojis, images of text) that can be programmatically determined</li>
 	<li>A short description of an image</li>
 	<li>Alt text is read by a screen reader when it reaches an image to allow the content to be perceived</li>
-	<li>Alt text using the <code>alt</code> tag is for images</li>
-</List>
+	<li>Alt text using the <b>alt</b> tag is for images</li>
+</ul>
 
 ---
 
 ## Why Alt Text?
 
 <blockquote>Guideline 1.1 - Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</blockquote>
-<Link href="https://www.w3.org/TR/WCAG20/#text-equiv"><cite>WCAG 2.0 Guidelines</cite></Link>
+<a href="https://www.w3.org/TR/WCAG20/#text-equiv"><cite>WCAG 2.0 Guidelines</cite></a>
 
 ---
 
@@ -53,7 +52,7 @@ The image url might be read instead or just "Image".
 
 Use empty/null alt text for decorative images.
 
-<code>alt=""</code> allows the screen reader to skip over the image.
+`alt=""` allows the screen reader to skip over the image.
 
 ---
 
@@ -65,19 +64,19 @@ An image that doesn’t convey any meaning or add information. If the page makes
 
 ## What about Aria-hidden?
 
-We know we can use <code>aria-hidden="true"</code> to hide things from screen readers, so can we use it for images?
+We know we can use `aria-hidden="true"` to hide things from screen readers, so can we use it for images?
 
-No, because it is not semantically correct. Use <code>aria-hidden</code> for icons and other elements you want to hide for screen reader users.
+No, because it is not semantically correct. Use `aria-hidden` for icons and other elements you want to hide for screen reader users.
 
 ---
 
 ## What does not go in alt text?
 
-<List>
+<ul>
 	<li>Redundant information that is already on the page</li>
 	<li>“Picture of”, “Image of”... (Screen readers already announce this)</li>
 	<li>Information that should be accessible to everyone, such as a caption</li>
-</List>
+</ul>
 
 ---
 
@@ -100,10 +99,16 @@ When in doubt, consult your designer or PM.
 
 ---
 
+## How can I enforce this in React code?
+
+You can use <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md">eslint-plugin-jsx-a11y</a>'s rule for alt-text.
+
+---
+
 ## Some Helpful Resources
-<List>
-	<li><Link href="https://webaim.org/techniques/alttext/">WebAIM</Link></li>
-	<li><Link href="https://accessibility.oregonstate.edu/alttext">Oregon State</Link></li>
-	<li><Link href="https://www.deque.com/blog/great-alt-text-introduction/">Deque</Link></li>
-	<li><Link href="https://www.w3.org/WAI/tutorials/images/informative/">W3 examples</Link></li>
-</List>
+<ul>
+	<li><a href="https://webaim.org/techniques/alttext/">WebAIM</a></li>
+	<li><a href="https://accessibility.oregonstate.edu/alttext">Oregon State</a></li>
+	<li><a href="https://www.deque.com/blog/great-alt-text-introduction/">Deque</a></li>
+	<li><a href="https://www.w3.org/WAI/tutorials/images/informative/">W3 examples</a></li>
+</ul>
