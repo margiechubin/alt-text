@@ -1,4 +1,6 @@
-import {yellow as theme} from 'mdx-deck/themes'
+import theme from 'mdx-deck/themes'
+import okaidia from 'react-syntax-highlighter/styles/prism/okaidia'
+import jsx from 'react-syntax-highlighter/languages/prism/jsx'
 
 export default {
   ...theme,
@@ -12,6 +14,9 @@ export default {
   	...theme.colors,
   	text: 'white',
   	background: '#364141',
-    link: '#00a99c'
+  },
+  prism: {
+	style: okaidia,
+	language: jsx
   },
 }
