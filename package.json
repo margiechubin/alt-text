@@ -15,5 +15,8 @@
   "devDependencies": {
     "mdx-deck": "^1.6.7"
   },
-  "name": "alt-text"
+  "name": "alt-text",
+  "dependencies": {
+    "react-syntax-highlighter": "^10.1.3"
+  }
 }
